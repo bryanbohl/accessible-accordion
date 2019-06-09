@@ -1,0 +1,29 @@
+// Helper Settings
+// ------------------------------------------------------------------------------
+
+// Breakpoints
+// ------------------------------------------------------------------------------
+$breakpoints: (
+	small:  320px,  /* Smartphones --------------- */
+	medium: 768px,  /* Tablets Portrait ---------- */
+	large:  1224px, /* Desktops and laptops ------ */
+	xlarge: 1824px  /* Large screens ------------- */
+);
+
+$content-width-narrow: 770;
+$content-width: 980;
+$container-width: 1170;
+$container-width-wide: 1700;
+
+
+// Fonts
+// ------------------------------------------------------------------------------
+
+$font-body: 'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;
+$font-footer:  'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;
+$font-heading:  'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;
+$font-button:  'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;
+$font-cta:  'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;
+$font-link:  'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;
+$font-input:  'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;
+$font-callout:  'Gotham SSm A', 'Gotham SSm B', Arial, Sans-serif;

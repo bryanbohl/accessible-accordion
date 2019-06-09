@@ -1,0 +1,61 @@
+/*------------------------------------------
+ FAQ
+-------------------------------------------*/
+
+.faq {
+	$block: &;
+
+	&__container {
+		@include breakpoint($large) {
+			max-width: rem($content-width-narrow);
+		}
+	}
+	&__section {
+		border-bottom: 1px solid $faq-header-border;
+	}
+	&__header {
+		padding: rem(25) rem(30);
+		position: relative;
+		cursor: pointer;
+		@include breakpoint($medium) {
+			padding: rem(45) rem(60);
+		}
+		&:before {
+			content: 'Q';
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			font-size: rem(18);
+			font-weight: 700;
+			color: $faq-q-icon;
+		}
+		&.expanded {
+			#{$block}__toggle-icon {
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+	&__title {
+		display: inline-block;
+		margin: 0;
+		vertical-align: middle;
+	}
+	&__toggle-icon {
+		@include center-vertical();
+		right: 0;
+		svg {
+			width: 14px;
+			height: 7px;
+			fill: $faq-toggle-icon;
+			transition: transform 300ms ease-in-out;
+		}
+	}
+	&__content {
+		padding: 0 rem(30) rem(25);
+		@include breakpoint($medium) {
+			padding: 0 rem(60) rem(50);
+		}
+	}
+}
